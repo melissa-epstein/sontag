@@ -1,6 +1,4 @@
 (() => {
-    window.addHeader();
-    window.addFooter();
     const reviews = document.querySelectorAll('.quality__review');
     const dotContainer = document.querySelector('.quality__dots');
     const dots = [];

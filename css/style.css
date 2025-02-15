@@ -473,148 +473,6 @@ a {
     }
 }
 
-.mailing-list {
-    font-family: 'Montserrat', sans-serif;
-    width: 340px;
-    margin: 0 auto 32px auto;
-}
-.mailing-list__text {
-    background-color: #304c94;
-    background-image: url("../img/illustrations/music-player.png");
-    background-repeat: no-repeat;
-    background-position: right;
-    background-size: contain;
-    border-radius: 15px;
-    padding: 16px 0 0 16px;
-    height: 175px;
-    margin-bottom: 16px;
-}
-.mailing-list__subscribe {
-    color: #fbf3e9;
-    font-size: 20px;
-    font-weight: 600;
-    margin-bottom: 28px;
-    width: 250px;
-}
-.mailing-list__learn {
-    font-size: 15px;
-    font-weight: 300;
-    color: #fbf3e9;
-}
-.mailing-list__input {
-    width: 100%;
-    height: 61px;
-    border: 1px solid #ff6f61;
-    font-size: 14px;
-    font-weight: 400;
-    margin-bottom: 4px;
-    text-align: center;
-    border-radius: 49px;
-    color: #ff6f61;
-}
-.mailing-list__input::placeholder {
-    color: #ff6f61;
-}
-.mailing-list__submit {
-    width: 100%;
-    height: 61px;
-    border: none;
-    background-color: #304c94;
-    color: #fbf3e9;
-    font-size: 16px;
-    font-weight: 600;
-    border-radius: 49px;
-}
-.mailing-list__submit:hover {
-    filter: brightness(0.8);
-    cursor: pointer;
-}
-.mailing-list__submit:active {
-    filter: brightness(0.6);
-}
-@media (min-width: 724px) {
-    .mailing-list {
-        width: 707px;
-        margin-bottom: 64px;
-    }
-    .mailing-list__text {
-        padding: 49px 27px;
-        height: 386px;
-        border-radius: 20px;
-    }
-    .mailing-list__subscribe {
-        font-weight: 600;
-        font-size: 36px;
-        margin-bottom: 75px;
-        width: 416px;
-    }
-    .mailing-list__learn {
-        font-size: 24px;
-        font-weight: 400;
-        width: 399px;
-    }
-    .mailing-list__form {
-        width: 425px;
-        margin: 0 auto;
-    }
-    .mailing-list__input {
-        margin-bottom: 5px;
-        height: 67px;
-        font-size: 16px;
-    }
-    .mailing-list__submit {
-        height: 67px;
-        font-weight: 700;
-        color: white;
-        background-color: #ff6f61;
-    }
-}
-@media (min-width: 1417px) {
-    .mailing-list {
-        width: 1400px;
-        height: 450px;
-        background-color: #304c94;
-        background-image: url("../img/illustrations/music-player.png");
-        background-repeat: no-repeat;
-        background-position: right;
-        background-size: contain;
-        border-radius: 20px;
-        padding: 32px;
-    }
-    .mailing-list__text {
-        background-color: transparent;
-        background-image: none;
-        padding: 0;
-        height: auto;
-    }
-    .mailing-list__subscribe {
-        font-size: 48px;
-        font-weight: 700;
-        width: 100%;
-        margin-bottom: 16px;
-    }
-    .mailing-list__learn {
-        font-weight: 300;
-        width: 740px;
-        margin-bottom: 82px;
-    }
-    .mailing-list__form {
-        width: 478px;
-    }
-    .mailing-list__input {
-        color: #fbf3e9;
-        border: 1px solid #fbf3e9;
-        background-color: #fbf3e919;
-    }
-    .mailing-list__input::placeholder {
-        color: #fbf3e980;
-    }
-    .mailing-list__submit {
-        font-weight: 600;
-        color: #fbf3e9;
-    }
-}
-
 .footer {
     background-color: #ff6f61;
     border-radius: 15px;
@@ -845,7 +703,7 @@ a {
 }
 .sing-up-please__text-container {
     background-color: #304c94;
-    background-image: url("../img/courses/pexels-davifnr.png");
+    background-image: url("../img/illustrations/pexels-davifnr.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: right;
@@ -881,7 +739,7 @@ a {
 @media (min-width: 724px) {
     .sing-up-please {
         background-color: #304c94;
-        background-image: url("../img/courses/pexels-davifnr.png");
+        background-image: url("../img/illustrations/pexels-davifnr.png");
         background-size: contain;
         background-repeat: no-repeat;
         background-position: right;
@@ -1352,6 +1210,251 @@ a {
         width: 13px;
         height: 13px;
     }
+}
+
+.mailing-list {
+    font-family: 'Montserrat', sans-serif;
+    width: 340px;
+    margin: 0 auto 32px auto;
+}
+.mailing-list__text {
+    background-color: #304c94;
+    background-image: url("../img/illustrations/music-player.png");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+    border-radius: 15px;
+    padding: 16px 0 0 16px;
+    height: 175px;
+    margin-bottom: 16px;
+}
+.mailing-list__subscribe {
+    color: #fbf3e9;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 28px;
+    width: 250px;
+}
+.mailing-list__learn {
+    font-size: 15px;
+    font-weight: 300;
+    color: #fbf3e9;
+}
+.mailing-list__input {
+    width: 100%;
+    height: 61px;
+    border: 1px solid #ff6f61;
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 4px;
+    text-align: center;
+    border-radius: 49px;
+    color: #ff6f61;
+}
+.mailing-list__input::placeholder {
+    color: #ff6f61;
+}
+.mailing-list__submit {
+    width: 100%;
+    height: 61px;
+    border: none;
+    background-color: #304c94;
+    color: #fbf3e9;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 49px;
+}
+.mailing-list__submit:hover {
+    filter: brightness(0.8);
+    cursor: pointer;
+}
+.mailing-list__submit:active {
+    filter: brightness(0.6);
+}
+@media (min-width: 724px) {
+    .mailing-list {
+        width: 707px;
+        margin-bottom: 64px;
+    }
+    .mailing-list__text {
+        padding: 49px 27px;
+        height: 386px;
+        border-radius: 20px;
+    }
+    .mailing-list__subscribe {
+        font-weight: 600;
+        font-size: 36px;
+        margin-bottom: 75px;
+        width: 416px;
+    }
+    .mailing-list__learn {
+        font-size: 24px;
+        font-weight: 400;
+        width: 399px;
+    }
+    .mailing-list__form {
+        width: 425px;
+        margin: 0 auto;
+    }
+    .mailing-list__input {
+        margin-bottom: 5px;
+        height: 67px;
+        font-size: 16px;
+    }
+    .mailing-list__submit {
+        height: 67px;
+        font-weight: 700;
+        color: white;
+        background-color: #ff6f61;
+    }
+}
+@media (min-width: 1417px) {
+    .mailing-list {
+        width: 1400px;
+        height: 450px;
+        background-color: #304c94;
+        background-image: url("../img/illustrations/music-player.png");
+        background-repeat: no-repeat;
+        background-position: right;
+        background-size: contain;
+        border-radius: 20px;
+        padding: 32px;
+    }
+    .mailing-list__text {
+        background-color: transparent;
+        background-image: none;
+        padding: 0;
+        height: auto;
+    }
+    .mailing-list__subscribe {
+        font-size: 48px;
+        font-weight: 700;
+        width: 100%;
+        margin-bottom: 16px;
+    }
+    .mailing-list__learn {
+        font-weight: 300;
+        width: 740px;
+        margin-bottom: 82px;
+    }
+    .mailing-list__form {
+        width: 478px;
+    }
+    .mailing-list__input {
+        color: #fbf3e9;
+        border: 1px solid #fbf3e9;
+        background-color: #fbf3e919;
+    }
+    .mailing-list__input::placeholder {
+        color: #fbf3e980;
+    }
+    .mailing-list__submit {
+        font-weight: 600;
+        color: #fbf3e9;
+    }
+}
+
+.faq {
+    font-family: 'Montserrat', sans-serif;
+    width: 340px;
+    margin: 0 auto 32px auto;
+    background-image: url("../img/illustrations/caravaggio.png"), url("../img/illustrations/faq.svg");
+    background-position: center 96px, left 88px;
+    background-size: contain, 205px;
+    background-repeat: no-repeat;
+}
+.faq__little-question {
+    width: 223px;
+    height: 82.25px;
+    background-image: url("../img/illustrations/to-ask.svg");
+    background-size: cover;
+    margin: 0 auto;
+    font-size: 12px;
+    font-weight: 600;
+    color: #fbf3e9;
+    text-align: center;
+    padding-top: 17px;
+    margin-bottom: 181.75px;
+}
+.faq__question {
+    width: 100%;
+    height: 65px;
+    background-color: #304c94;
+    border-radius: 15px;
+    margin-top: 4px;
+    display: flex;
+    padding: 0 16px;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 600;
+    color: #fbf3e9;
+}
+.faq__question:hover {
+    cursor: pointer;
+    filter: brightness(0.8);
+}
+.faq__question:active {
+    filter: brightness(0.6);
+}
+.faq__question--opened {
+    background-color: #ff6f61;
+}
+@keyframes rotate-button-open {
+    from {transform: rotate(0deg)};
+    from {transform: rotate(45deg)};
+}
+@keyframes rotate-button-closed {
+    from {transform: rotate(45deg)};
+    from {transform: rotate(0deg)};
+}
+.faq__button {
+    width: 19px;
+    height: 19px;
+    background-image: url("../img/interface/question-button.svg");
+    background-size: cover;
+}
+.faq__question--opened .faq__button {
+    transform: rotate(45deg);
+    animation-name: rotate-button-open;
+    animation-duration: 0.5s;
+}
+.faq__question--closed .faq__button {
+    transform: rotate(0deg);
+    animation-name: rotate-button-closed;
+    animation-duration: 0.2s;
+}
+.faq__answer {
+    display: none;
+    overflow: hidden;
+    width: 100%;
+    padding: 0 32px;
+    color: white;
+    font-size: 12px;
+    font-weight: 300;
+    background-color: #ff6f61;
+    border-radius: 15px;
+    margin-top: 4px;
+}
+@keyframes open-answer {
+    from {max-height: 0vh};
+    to {max-height: 100vh};
+}
+@keyframes close-answer {
+    from {max-height: 100vh};
+    to {max-height: 0vh};
+}
+.faq__answer--opened {
+    display: block;
+    max-height: 100vh;
+    animation-name: open-answer;
+    animation-duration: 0.5s;
+}
+.faq__answer--closed {
+    display: block;
+    max-height: 0vh;
+    animation-name: close-answer;
+    animation-duration: 0.2s;
 }
 
 .not-found {

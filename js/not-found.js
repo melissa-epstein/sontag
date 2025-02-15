@@ -1,6 +1,4 @@
 (() => {
-    window.addHeader();
-    window.addFooter();
     const addClickListener = (currentCourse, nextCourse, currentDot, nextDot) => {
         currentCourse.querySelector('.not-found__next').addEventListener('click', () => {
             currentDot.classList.remove('not-found__dots--active');
