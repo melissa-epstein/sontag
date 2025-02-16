@@ -1,4 +1,5 @@
 (() => {
+    //Adding sliding of reviews:
     const reviews = document.querySelectorAll('.quality__review');
     const dotContainer = document.querySelector('.quality__dots');
     const dots = [];
@@ -75,4 +76,8 @@
         switchingTimeOut = setTimeout(showNextReview, switchingTime);
     };
     switchingTimeOut = setTimeout(showNextReview, switchingTime);
+    //Scrolling to contact form
+    const contactForm = document.querySelector('.contact-us');
+    const signUpButton = document.querySelector('.sing-up-please__button');
+    signUpButton.addEventListener('click', () => contactForm.scrollIntoView({behavior: 'smooth', block: 'center'}));
 })();

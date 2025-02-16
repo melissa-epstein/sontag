@@ -45,6 +45,7 @@
         document.addEventListener('mousedown', hideSearch);
     }));
     //Adding jumping to bottom of the page by buttons
+    const footer = document.querySelector('.footer');
     const mailButton = header.querySelector('.header__mail');
-    mailButton.addEventListener('click', () => window.scrollTo(0, document.body.scrollHeight));
+    mailButton.addEventListener('click', () => footer.scrollIntoView({behavior: 'smooth'}));
 })();
