@@ -7,7 +7,7 @@
             <button type="button" class="header__close"></button>
         </div>
         <nav class="header__links">
-            <a href="#" class="header__link">О нас</a>
+            <a href="about-us.html" class="header__link">О нас</a>
             <a href="#" class="header__link">Каталог курсов</a>
             <a href="#" class="header__link">Сертификаты</a>
             <a href="faq.html" class="header__link">F.A.Q.</a>
@@ -40,7 +40,7 @@
     <nav class="header__menu">
         <a href="index.html" class="header__item">Главная</a>
         <a href="#" class="header__item">Каталог курсов</a>
-        <a href="#" class="header__item">О нас</a>
+        <a href="about-us.html" class="header__item">О нас</a>
     </nav>
     <div class="header__desktop-buttons">
         <button type="button" class="header__search-2"></button>

@@ -1,9 +1,9 @@
 (() => {
     const addClickListener = (currentCourse, nextCourse, currentDot, nextDot) => {
         currentCourse.querySelector('.not-found__next').addEventListener('click', () => {
-            currentDot.classList.remove('not-found__dots--active');
+            currentDot.classList.remove('not-found__dot--active');
             currentCourse.classList.add('not-found__course--gotta-leave');
-            nextDot.classList.add('not-found__dots--active');
+            nextDot.classList.add('not-found__dot--active');
             nextCourse.style.display = 'block';
             setTimeout(() => {
                 currentCourse.style.display = 'none';

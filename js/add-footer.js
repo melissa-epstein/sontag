@@ -4,14 +4,14 @@
     <a href="index.html"><img src="img/interface/logo-2.svg" class="footer__logo"/></a>
     <section class="footer__information">
         <nav class="footer__links">
-            <a href="#" class="footer__link">О нас</a>
+            <a href="about-us.html" class="footer__link">О нас</a>
             <a href="#" class="footer__link">Курсы</a>
             <a href="#" class="footer__link">Сертификаты</a>
             <a href="faq.html" class="footer__link">F.A.Q.</a>
         </nav>
         <nav class="footer__buttons">
             <a href="#" class="footer__button footer__button--telegram"></a>
-            <a href="index.html" class="footer__button footer__button--mail"></a>
+            <a href="index.html#contact-us" class="footer__button footer__button--mail"></a>
             <a href="#" class="footer__button footer__button--whatsapp"></a>
         </nav>
         <address class="footer__contacts">
