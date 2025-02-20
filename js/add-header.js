@@ -9,7 +9,7 @@
         <nav class="header__links">
             <a href="about-us.html" class="header__link">О нас</a>
             <a href="#" class="header__link">Каталог курсов</a>
-            <a href="#" class="header__link">Сертификаты</a>
+            <a href="sertificate.html" class="header__link">Сертификаты</a>
             <a href="faq.html" class="header__link">F.A.Q.</a>
         </nav>
         <div class="header__media">

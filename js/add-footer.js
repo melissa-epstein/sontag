@@ -6,7 +6,7 @@
         <nav class="footer__links">
             <a href="about-us.html" class="footer__link">О нас</a>
             <a href="#" class="footer__link">Курсы</a>
-            <a href="#" class="footer__link">Сертификаты</a>
+            <a href="sertificate.html" class="footer__link">Сертификаты</a>
             <a href="faq.html" class="footer__link">F.A.Q.</a>
         </nav>
         <nav class="footer__buttons">
