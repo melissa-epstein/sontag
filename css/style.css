@@ -60,7 +60,7 @@
 body {
     overflow-x: hidden;
 }
-ul, menu {
+ul, ol, menu {
     list-style: none;
 }
 a {
@@ -488,6 +488,11 @@ address {
         width: 707px;
         margin-bottom: 64px;
     }
+    .contact-us__main-title {
+        padding-left: 32px;
+        font-weight: 700;
+        font-size: 32px;
+    }
     .contact-us__title {
         font-size: 16px;
         padding-left: 28px;
@@ -516,6 +521,10 @@ address {
     .contact-us {
         width: 1396px;
         margin-bottom: 64px;
+    }
+    .contact-us__main-title {
+        padding-left: 140px;
+        font-size: 40px;
     }
     .contact-us__title {
         font-weight: 400;
@@ -1875,12 +1884,20 @@ address {
     color: #272624;
     margin-bottom: 32px;
 }
+.course__extra-line {
+    display: none;
+}
+.course__questions {
+    margin-bottom: 32px;
+}
+.course__info {
+    margin-bottom: 4px;
+}
 .course__question {
     width: 100%;
     height: 65px;
     background-color: #304c94;
     border-radius: 15px;
-    margin-top: 4px;
     display: flex;
     padding: 0 16px;
     justify-content: space-between;
@@ -1944,10 +1961,286 @@ address {
     animation-name: close-info;
     animation-duration: 0.2s;
 }
-.course__program-title {
-    margin: 32px 0 16px 0;
+@media (min-width: 724px) {
+    .course {
+        width: 707px;
+    }
+    .course__header {
+        padding: 16px;
+        height: 384px;
+        align-items: center;
+        margin-bottom: 64px;
+    }
+    .course__parameters {
+        height: 48px;
+    }
+    .course__parameter {
+        font-size: 20px;
+        line-height: 48px;
+    }
+    .course__parameter:not(:last-child) {
+        margin-right: 10px;
+    }
+    .course__title {
+        font-size: 48px;
+    }
+    .course__sign-up {
+        height: 69px;
+        border-width: 2px;
+        font-weight: 700;
+        font-size: 20px;
+        width: 396px;
+    }
+    .course__description {
+        font-weight: 300;
+        font-size: 16px;
+        margin-bottom: 64px;
+    }
+    .course__extra-line {
+        display: inline;
+    }
+    .course__questions {
+        margin-bottom: 64px;
+    }
+    .course__info {
+        margin-bottom: 5px;
+    }
+    .course__question {
+        height: 100px;
+        padding: 0 32px;
+        font-size: 32px;
+    }
+    .course__button {
+        width: 32px;
+        height: 32px;
+    }
+    .course__answer {
+        font-size: 16px;
+    }
+}
+@media (min-width: 1417px) {
+    .course {
+        width: 1400px;
+    }
+    .course__header {
+        height: 550px;
+        padding: 32px 288px 64px 288px;
+    }
+    .course__title {
+        font-size: 64px;
+    }
+    .course__sign-up {
+        font-weight: 600;
+        font-size: 24px;
+        width: 516px;
+        height: 72px;
+    }
+    .course__description {
+        padding: 0 284px;
+    }
+}
+
+.program {
+    width: 340px;
+    margin: 0 auto;
+    font-family: "Montserrat", sans-serif;
+}
+.program__title {
+    margin-bottom: 16px;
     color: #ff6f61;
     padding-left: 18px;
+}
+.program__modules {
+    margin-bottom: 8px;
+    height: 285px;
+}
+.program__module {
+    background-color: #304c94;
+    width: 340px;
+    height: 285px;
+    border-radius: 15px;
+    padding: 32px 16px;
+    color: #fbf3e9;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+    position: absolute;
+}
+@keyframes module-leaves {
+    from {transform: translate(0)}
+    to {transform: translate(100vw)}
+}
+.program__module--gotta-leave {
+    animation-name: module-leaves;
+    animation-duration: 2s;
+    z-index: 2;
+}
+.program__header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 29px;
+}
+.program__module-name {
+    font-size: 16px;
+    line-height: 33px;
+    font-weight: 600;
+    font-family: "Poppins", "Montserrat", sans-serif;
+}
+.program__next {
+    height: 33px;
+    width: 49px;
+    border: 1px solid #fbf3e9;
+    border-radius: 32px;
+    background-image: url("../img/interface/arrow-white.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 43%;
+    z-index: 1;
+    position: relative;
+}
+.program__next:hover {
+    cursor: pointer;
+    filter: brightness(0.8);
+}
+.program__next:active {
+    filter: brightness(0.6);
+}
+.program__module-description {
+    font-size: 12px;
+    font-weight: 300;
+    width: 237px;
+    z-index: 1;
+    position: relative;
+}
+.program__footer {
+    display: flex;
+    justify-content: end;
+}
+.program__lessons {
+    font-size: 16px;
+    font-weight: 400;
+    border: 1px solid #fbf3e9;
+    border-radius: 32px;
+    line-height: 33px;
+    padding: 0 29px;
+    z-index: 1;
+    position: relative;
+}
+.program__image {
+    width: 153px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+.program__download {
+    font-family: "Poppins", "Montserrat", sans-serif;
+    display: block;
+    background-color: #ff6f61;
+    line-height: 56px;
+    width: 100%;
+    color: #304c94;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 600;
+    border-radius: 15px;
+    margin-bottom: 32px;
+}
+.program__download:hover {
+    filter: brightness(0.8);
+}
+.program__download:active {
+    filter: brightness(0.6);
+}
+@media (min-width: 724px) {
+    .program {
+        width: 707px;
+    }
+    .program__title {
+        font-size: 48px;
+        padding-left: 28px;
+        margin-bottom: 32px;
+    }
+    .program__modules {
+        height: 427px;
+    }
+    .program__module {
+        width: 707px;
+        height: 427px;
+        padding: 32px;
+    }
+    .program__module-name {
+        font-size: 32px;
+        font-weight: 600;
+        font-family: "Montserrat", sans-serif;
+    }
+    .program__next {
+        width: 84px;
+        height: 57px;
+        border-width: 2px;
+    }
+    .program__module-description {
+        font-size: 16px;
+        font-weight: 400;
+        width: 363px;
+        line-height: 24px;
+    }
+    .program__lessons {
+        border-width: 2px;
+        font-size: 24px;
+        font-family: "Poppins", "Montserrat", sans-serif;
+        line-height: 50px;
+        padding: 0 72px;
+    }
+    .program__image {
+        width: 383px;
+    }
+    .program__download {
+        margin-bottom: 64px;
+        line-height: 100px;
+        font-size: 24px;
+        font-weight: 700;
+        font-family: "Montserrat", sans-serif;
+    }
+}
+@media (min-width: 1417px) {
+    .program {
+        width: 1400px;
+    }
+    .program__title {
+        font-size: 64px;
+        padding-left: 140px;
+    }
+    .program__modules {
+        height: 483px;
+    }
+    .program__module {
+        width: 1400px;
+        height: 483px;
+    }
+    .program__module-name {
+        font-size: 40px;
+    }
+    .program__next {
+        width: 117px;
+        height: 75px;
+        border-radius: 90px;
+    }
+    .program__module-description {
+        width: 796px;
+        font-size: 24px;
+        line-height: 36px;
+    }
+    .program__lessons {
+        padding: 0 78px;
+        line-height: 75px;
+        border-radius: 45px;
+        font-size: 32px;
+        font-family: "Montserrat", sans-serif;
+    }
+    .program__image {
+        width: 508px;
+    }
 }
 
 .not-found {
