@@ -1428,30 +1428,51 @@ address {
     font-family: 'Montserrat', sans-serif;
     width: 340px;
     margin: 0 auto 32px auto;
-    background-image: url("../img/illustrations/caravaggio.png"), url("../img/illustrations/faq.svg");
-    background-position: -2px 96px, left 88px;
-    background-size: 337px, 205px;
+    position: relative;
+    padding-top: 58px;
+}
+.faq__header {
+    background-image: url("../img/illustrations/caravaggio.png");
+    background-position: -2px 38px;
+    background-size: 337px;
     background-repeat: no-repeat;
+    padding-bottom: 91px;
+}
+.faq__title {
+    font-family: 'Poppins', serif;
+    font-size: 80px;
+    font-weight: 700;
+    color: transparent;
+    -webkit-text-stroke: 1px #ff6f61;
+    position: relative;
+    z-index: -1;
 }
 .faq__little-question {
     width: 223px;
     height: 82.25px;
     background-image: url("../img/illustrations/to-ask.svg");
     background-size: cover;
-    margin: 0 auto;
+    position: absolute;
+    top: 0;
+    left: 58px;
     font-size: 12px;
     font-weight: 600;
     color: #fbf3e9;
     text-align: center;
     padding-top: 17px;
-    margin-bottom: 181.75px;
+}
+.faq__questions {
+    position: relative;
+    top: -5px
+}
+.faq__info {
+    margin-bottom: 4px;
 }
 .faq__question {
     width: 100%;
     height: 65px;
     background-color: #304c94;
     border-radius: 15px;
-    margin-top: 4px;
     display: flex;
     padding: 0 16px;
     justify-content: space-between;
@@ -1518,9 +1539,16 @@ address {
 @media (min-width: 724px) {
     .faq {
         width: 707px;
-        background-position: -19px 144px, left 120px;
-        background-size: 716px, 448px;
         margin-bottom: 64px;
+        padding-top: 57px;
+    }
+    .faq__header {
+        background-position: -19px 87px;
+        background-size: 716px;
+    }
+    .faq__title {
+        font-size: 175px;
+        left: -20px;
     }
     .faq__little-question {
         width: 391px;
@@ -1529,6 +1557,7 @@ address {
         margin-bottom: 280.17px;
         font-size: 20px;
         font-weight: 500;
+        left: 158px;
     }
     .faq__question {
         height: 100px;
@@ -1551,18 +1580,31 @@ address {
 @media (min-width: 1417px) {
     .faq {
         width: 1400px;
-        background-position: right 66px, left 13px;
-        background-size: 792px, 732px;
-        padding-top: 314px;
+        padding-top: 0;
+    }
+    .faq__header {
+        background-position: right 96px;
+        background-size: 730px;
+        padding-bottom: 254px;
+    }
+    .faq__title {
+        font-size: 300px;
+        line-height: 275px;
     }
     .faq__little-question {
-        margin-bottom: 105px;
         width: 300px;
         height: 115px;
         padding-top: 56px;
         font-size: 16px;
         background-image: url("../img/illustrations/to-ask-desktop.svg");
-        margin-left: 844px;
+        top: 324px;
+        left: 854px;
+    }
+    .faq__info {
+        margin-bottom: 8px;
+    }
+    .faq__question--opened {
+        margin-bottom: 8px;
     }
 }
 
@@ -2518,6 +2560,145 @@ address {
     }
     .benefits__description {
         font-size: 20px;
+    }
+}
+
+.how-to-issue {
+    width: 340px;
+    margin: 0 auto;
+    font-family: "Montserrat", sans-serif;
+}
+.how-to-issue__title {
+    padding-left: 16px;
+    font-weight: 700;
+    font-size: 24px;
+    color: #ff6f61;
+    margin-bottom: 16px;
+}
+.how-to-issue__steps {
+    margin-bottom: 32px;
+}
+.how-to-issue__step {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    height: 127px;
+    background-position: center 51.89px;
+    background-repeat: no-repeat;
+    background-size: 36px 68px;
+}
+.how-to-issue__step:nth-child(odd):not(:last-child) {
+    background-image: url("../img/illustrations/arrow-right.svg");
+}
+.how-to-issue__step:nth-child(even) {
+    align-items: end;
+    background-image: url("../img/illustrations/arrow-left.svg");
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+.how-to-issue__number {
+    width: 169px;
+    line-height: 42px;
+    border: 1px solid #ff6f61d0;
+    border-radius: 100px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    color: #ff6f61e8;
+}
+.how-to-issue__description {
+    width: 169px;
+    font-weight: 400;
+    font-size: 12px;
+    color: #272624;
+    padding-top: 18px;
+    padding-left: 16px;
+}
+.how-to-issue__step:nth-child(even) .how-to-issue__description {
+    padding-left: 33px;
+}
+.how-to-issue__gift {
+    padding-left: 16px;
+    font-weight: 700;
+    font-size: 16px;
+    color: #ff6f61;
+    margin-bottom: 16px;
+}
+@media (min-width: 724px) {
+    .how-to-issue {
+        width: 707px;
+    }
+    .how-to-issue__title {
+        font-size: 48px;
+        padding-left: 32px;
+        margin-bottom: 58px;
+    }
+    .how-to-issue__steps {
+        margin-bottom: 64px;
+    }
+    .how-to-issue__step {
+        height: 188px;
+        background-position-y: 82px;
+        background-size: auto;
+    }
+    .how-to-issue__number {
+        width: 350px;
+        line-height: 66px;
+        font-size: 24px;
+        font-weight: 700;
+        border-width: 3px;
+    }
+    .how-to-issue__description {
+        font-size: 16px;
+        padding-left: 90px;
+        padding-right: 90px;
+        width: 350px;
+    }
+    .how-to-issue__step:nth-child(even) .how-to-issue__description {
+        padding-left: 90px;
+        padding-right: 90px;
+    }
+    .how-to-issue__gift {
+        padding-left: 32px;
+        font-size: 32px;
+        margin-bottom: 32px;
+    }
+}
+@media (min-width: 1417px) {
+    .how-to-issue {
+        width: 1400px;
+    }
+    .how-to-issue__title {
+        padding-left: 140px;
+        font-size: 64px;
+    }
+    .how-to-issue__steps {
+        width: 831px;
+        margin: 0 auto;
+    }
+    .how-to-issue__step {
+        height: 265px;
+        background-size: 74px 181px;
+    }
+    .how-to-issue__number {
+        width: 396px;
+        font-size: 32px;
+        font-weight: 500;
+    }
+    .how-to-issue__description {
+        font-size: 20px;
+        padding-left: 94px;
+        padding-right: 94px;
+        width: 396px;
+    }
+    .how-to-issue__step:nth-child(even) .how-to-issue__description {
+        padding-left: 94px;
+        padding-right: 94px;
+    }
+    .how-to-issue__gift {
+        display: none;
     }
 }
 
