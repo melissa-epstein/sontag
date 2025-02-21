@@ -2963,6 +2963,11 @@ address {
         font-size: 48px;
         padding-left: 34px;
     }
+    .catalogue__grade-free {
+        line-height: 100px;
+        font-size: 48px;
+        padding-left: 36px;
+    }
     .catalogue__items {
         height: 333px;
     }
@@ -3054,6 +3059,9 @@ address {
     }
     .catalogue__grade-title {
         padding-left: 140px;
+        font-size: 64px;
+    }
+    .catalogue__grade-free {
         font-size: 64px;
     }
     .catalogue__items {
