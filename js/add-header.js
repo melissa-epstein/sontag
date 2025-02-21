@@ -8,7 +8,7 @@
         </div>
         <nav class="header__links">
             <a href="about-us.html" class="header__link">О нас</a>
-            <a href="#" class="header__link">Каталог курсов</a>
+            <a href="catalogue.html" class="header__link">Каталог курсов</a>
             <a href="sertificate.html" class="header__link">Сертификаты</a>
             <a href="faq.html" class="header__link">F.A.Q.</a>
         </nav>
@@ -39,7 +39,7 @@
     <button type="button" class="header__menu-button"></button>
     <nav class="header__menu">
         <a href="index.html" class="header__item">Главная</a>
-        <a href="#" class="header__item">Каталог курсов</a>
+        <a href="catalogue.html" class="header__item">Каталог курсов</a>
         <a href="about-us.html" class="header__item">О нас</a>
     </nav>
     <div class="header__desktop-buttons">
