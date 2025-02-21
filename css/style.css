@@ -2702,6 +2702,393 @@ address {
     }
 }
 
+.catalogue {
+    width: 340px;
+    margin: 0 auto;
+    font-family: "Montserrat", sans-serif;
+}
+.catalogue__header {
+    width: 100%;
+    height: 443px;
+    background-color: #304c94;
+    border-radius: 15px;
+    overflow: hidden;
+    padding: 32px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    margin-bottom: 32px;
+}
+.catalogue__illustration {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+@keyframes slide {
+    0% {
+        transform: translateX(20%);
+    }
+    100% {
+        transform: translateX(-20%);
+    }
+}
+.catalogue__slide {
+    display: flex;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-name: slide;
+}
+.catalogue__slide--to-left {
+    animation-direction: alternate;
+}
+.catalogue__slide--to-right {
+    animation-direction: alternate-reverse;
+    display: none;
+}
+.catalogue__clone {
+    display: flex;
+}
+.catalogue__slide-item {
+    line-height: 40px;
+    border: 1px solid #fbf3e9;
+    border-radius: 28px;
+    color: #fbf3e9;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 0 32px;
+    margin-right: 4px;
+}
+.catalogue__title {
+    font-size: 24px;
+    font-weight: 600;
+    color: #fbf3e9;
+    position: relative;
+    z-index: 1;
+}
+.catalogue__sign-up-button {
+    width: 308px;
+    height: 61px;
+    border: 1px solid #fbf3e9;
+    backdrop-filter: blur(2px);
+    background-color: #fbf3e980;
+    color: #fbf3e9;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 49px;
+}
+.catalogue__sign-up-button:hover {
+    cursor: pointer;
+    filter: brightness(0.8);
+}
+.catalogue__sign-up-button:active {
+    filter: brightness(0.6);
+}
+.catalogue__grade {
+    margin-bottom: 32px;
+}
+.catalogue__grade-title {
+    color: #ff6f61;
+    font-size: 24px;
+    font-weight: 700;
+    padding-left: 16px;
+    margin-bottom: 16px;
+}
+.catalogue__grade-free {
+    width: 100%;
+    padding-left: 16px;
+    background-color: #ff6f61;
+    border-radius: 15px;
+    color: #fbf3e9;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 65px;
+    margin-bottom: 8px;
+}
+.catalogue__items {
+    margin-bottom: 16px;
+    height: 227px;
+    width: 100%;
+    position: relative;
+}
+.catalogue__item {
+    width: 100%;
+    height: 227px;
+    padding: 16px;
+    border-radius: 15px;
+    position: absolute;
+    overflow: hidden;
+    background-color: #304c94;
+    margin-bottom: 8px;
+}
+.catalogue__item--gotta-leave {
+    animation-name: element-leaves;
+    animation-duration: 1s;
+    z-index: 2;
+}
+.catalogue__item-container {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
+}
+.catalogue__image {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 90%;
+}
+.catalogue__date {
+    font-size: 16px;
+    font-weight: 400;
+    color: #fbf3e9;
+}
+.catalogue__name {
+    font-size: 20px;
+    font-weight: 600;
+    color: #fbf3e9;
+    width: 245px;
+}
+.catalogue__name:hover {
+    filter: brightness(0.8);
+}
+.catalogue__name:active {
+    filter: brightness(0.6);
+}
+.catalogue__course-footer {
+    width: 100%;
+    height: 33px;
+    display: flex;
+    justify-content: space-between;
+}
+.catalogue__lectures {
+    width: 122px;
+    text-align: center;
+    line-height: 33px;
+    font-size: 16px;
+    font-weight: 400;
+    border: 1px solid #fbf3e9;
+    border-radius: 28px;
+    vertical-align: bottom;
+    color: #fbf3e9;
+}
+.catalogue__next {
+    display: block;
+    height: 100%;
+    width: 49px;
+    border: 1px solid #fbf3e9;
+    border-radius: 28px;
+    background-image: url("../img/interface/arrow-white.svg");
+    background-size: 34%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.catalogue__next:hover {
+    filter: brightness(0.8);
+    cursor: pointer;
+}
+.catalogue__next:active {
+    transform: scale(0.9);
+}
+.catalogue__dots {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 32px;
+}
+.catalogue__dots div {
+    margin-right: 3px;
+    width: 8px;
+    height: 8px;
+    border: 2px solid #272624;
+    border-radius: 20px;
+}
+.catalogue__dots div:hover {
+    cursor: pointer;
+}
+.catalogue__dots div:not(.catalogue__dot--active):hover {
+    background-color: #272624;
+}
+.catalogue__dots div:not(.catalogue__dot--active):active {
+    filter: brightness(3);
+}
+.catalogue__dots div.catalogue__dot--active {
+    border: none;
+    background-color: #ff6f61;
+}
+@media (min-width: 724px) {
+    .catalogue {
+        width: 707px;
+    }
+    .catalogue__header {
+        height: 384px;
+        justify-content: flex-start;
+        margin-bottom: 64px;
+    }
+    .catalogue__illustration {
+        left: 300px;
+        bottom: -30px;
+    }
+    .catalogue__slide--to-left {
+        margin-bottom: 61px;
+    }
+    .catalogue__slide--to-right {
+        display: flex;
+    }
+    .catalogue__slide-item {
+        font-size: 20px;
+        padding: 0 41px;
+    }
+    .catalogue__title {
+        font-size: 48px;
+        margin-bottom: 18px;
+    }
+    .catalogue__sign-up-button {
+        width: 396px;
+        height: 69px;
+        border-width: 2px;
+        font-size: 20px;
+        font-weight: 700;
+        margin-bottom: 34px;
+    }
+    .catalogue__grade {
+        margin-bottom: 64px;
+    }
+    .catalogue__grade-title {
+        margin-bottom: 32px;
+        font-size: 48px;
+        padding-left: 34px;
+    }
+    .catalogue__items {
+        height: 333px;
+    }
+    .catalogue__item {
+        height: 333px;
+        padding: 32px;
+        border-radius: 20px;
+    }
+    .catalogue__date {
+        font-size: 20px;
+    }
+    .catalogue__name {
+        width: 570px;
+        font-size: 36px;
+    }
+    .catalogue__course-footer {
+        height: 43px;
+    }
+    .catalogue__lectures {
+        line-height: 43px;
+        border-width: 1.5px;
+        width: 192px;
+    }
+    .catalogue__next {
+        width: 70px;
+        background-color: #ffffff1a;
+        backdrop-filter: blur(2px);
+        border-width: 1.5px;
+    }
+    .catalogue__dots {
+        margin-bottom: 64px;
+    }
+    .catalogue__dots div {
+        margin-right: 5px;
+        width: 14px;
+        height: 14px;
+        border: 2px solid #ff6f61;
+        border-radius: 20px;
+    }
+    .catalogue__dots div:not(.catalogue__dot--active):hover {
+        background-color: #ff6f61;
+    }
+    .catalogue__dots div:not(.catalogue__dot--active):active {
+        filter: brightness(1.5);
+    }
+    .catalogue__dots div.catalogue__dot--active {
+        border: none;
+        background-color: #304c94;
+    }
+}
+@media (min-width: 1417px) {
+    .catalogue {
+        width: 1400px;
+    }
+    .catalogue__header {
+        height: 550px;
+        margin-bottom: 96px;
+    }
+    .catalogue__illustration {
+        width: 500px;
+        bottom: 0;
+        left: 630px;
+        z-index: 1;
+    }
+    .catalogue__slide-item {
+        font-size: 24px;
+        padding: 0 97px;
+        line-height: 57px;
+        margin-right: 8px;
+    }
+    .catalogue__slide--to-left {
+        margin-bottom: 111px;
+    }
+    .catalogue__title {
+        margin-bottom: 85px;
+        font-size: 64px;
+    }
+    .catalogue__sign-up-button {
+        margin-bottom: 0;
+        width: 516px;
+        height: 75px;
+        font-size: 24px;
+        font-weight: 600;
+        z-index: 2;
+        position: relative;
+    }
+    .catalogue__slide--to-right {
+        display: none;
+    }
+    .catalogue__grade-title {
+        padding-left: 140px;
+        font-size: 64px;
+    }
+    .catalogue__items {
+        margin-bottom: 24px;
+        height: 450px;
+    }
+    .catalogue__item {
+        height: 450px;
+    }
+    .catalogue__date {
+        font-size: 32px;
+    }
+    .catalogue__name {
+        font-size: 64px;
+        width: 1000px;
+    }
+    .catalogue__course-footer {
+        height: 75px;
+    }
+    .catalogue__lectures {
+        line-height: 75px;
+        border-radius: 90px;
+        border-width: 2px;
+        width: 332px;
+        font-size: 32px;
+    }
+    .catalogue__next {
+        width: 117px;
+        background-color: transparent;
+        backdrop-filter: none;
+        border-radius: 90px;
+        border-width: 2px;
+    }
+}
+
 .not-found {
     width: 340px;
     margin-right: auto;

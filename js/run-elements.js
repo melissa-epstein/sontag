@@ -11,9 +11,9 @@
             }, animationTime);
         });
     };
-    window.runElements = (section, animationTime) => {
-        const items = document.querySelectorAll(`.${section}__item`);
-        const dotContainer = document.querySelector(`.${section}__dots`);
+    window.runElements = (container, section, animationTime) => {
+        const items = container.querySelectorAll(`.${section}__item`);
+        const dotContainer = container.querySelector(`.${section}__dots`);
         const dots = [];
         for (let i = 0; i < items.length; i++) {
             dots.push(document.createElement('div'));

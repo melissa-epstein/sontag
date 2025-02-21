@@ -1,3 +1,3 @@
 (() => {
-    window.runElements('not-found', 1000);
+    window.runElements(document.querySelector('.not-found'), 'not-found', 1000);
 })();
