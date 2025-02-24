@@ -13,10 +13,10 @@
             <a href="faq.html" class="header__link">F.A.Q.</a>
         </nav>
         <div class="header__media">
-            <button class="header__button header__button--telegram"></button>
+            <a href="https://t.me/sontagschool" class="header__button header__button--telegram"></a>
             <button class="header__button header__button--phone"></button>
-            <button class="header__button header__button--mail"></button>
-            <button class="header__button header__button--whatsapp"></button>
+            <a href="index.html#contact-us" class="header__button header__button--mail"></a>
+            <a href="https://chat.whatsapp.com/GM6ppsrBCV0Dolrif0LCOn" class="header__button header__button--whatsapp"></a>
         </div>
     </dialog>
     <dialog class="header__contact">

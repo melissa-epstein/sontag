@@ -5,14 +5,14 @@
     <section class="footer__information">
         <nav class="footer__links">
             <a href="about-us.html" class="footer__link">О нас</a>
-            <a href="#" class="footer__link">Курсы</a>
+            <a href="catalogue.html" class="footer__link">Курсы</a>
             <a href="sertificate.html" class="footer__link">Сертификаты</a>
             <a href="faq.html" class="footer__link">F.A.Q.</a>
         </nav>
         <nav class="footer__buttons">
-            <a href="#" class="footer__button footer__button--telegram"></a>
+            <a href="https://t.me/sontagschool" class="footer__button footer__button--telegram"></a>
             <a href="index.html#contact-us" class="footer__button footer__button--mail"></a>
-            <a href="#" class="footer__button footer__button--whatsapp"></a>
+            <a href="https://chat.whatsapp.com/GM6ppsrBCV0Dolrif0LCOn" class="footer__button footer__button--whatsapp"></a>
         </nav>
         <address class="footer__contacts">
             <p class="footer__contact">+7 (999) 777-99-99 (whatsapp, tg)</p>
