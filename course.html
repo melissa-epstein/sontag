@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <title>Sontag</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <header class="header"></header>
+        <main>
+            <section class="course">
+                <hgroup class="course__header">
+                    <div class="course__parameters">
+                        <p class="course__parameter course__parameter--type"></p>
+                        <p class="course__parameter course__parameter--date"></p>
+                        <p class="course__parameter course__parameter--age"></p>
+                    </div>
+                    <h1 class="course__title"></h1>
+                    <button class="course__sign-up">Записаться</button>
+                </hgroup>
+                <p class="course__description"></p>
+                <ul class="course__questions">
+                    <template id="question">
+                        <li class="course__info">
+                            <div class="course__question">
+                                <p></p>
+                                <div class="course__button"></div>
+                            </div>
+                            <p class="course__answer"></p>
+                        </li>
+                    </template>
+                </ul>
+            </section>
+            <section class="program">
+                <h2 class="program__title">Программа курса</h2>
+                <ol class="program__modules">
+                    <template id="module">
+                        <li class="program__module">
+                            <div class="program__header">
+                                <h3 class="program__module-name"></h3>
+                                <button class="program__next" type="button"></button>
+                            </div>
+                            <p class="program__module-description"></p>
+                            <div class="program__footer">
+                                <p class="program__lessons"></p>
+                            </div>
+                            <img class="program__image"/>
+                        </li>
+                    </template>
+                </ol>
+                <a class="program__download" download>Скачать подробную программу курса</a>
+            </section>
+            <section class="contact-us">
+                <h2 class="contact-us__main-title">Заполняйте заявку, чтобы записаться на курс</h2>
+                <p class="contact-us__title">
+                    <span class="contact-us__title-mobile">Если у вас возникли другие вопросы по курсу, свяжитесь с нами, и мы подробно ответим на каждый из них.</span>
+                    <span class="contact-us__title-tablet">Остались вопросы? Свяжитесь с нами! Заполняйте форму обратной связи или напишите нам по почте, а также в соцсетях.</span>
+                    <span class="contact-us__title-laptop">Остались вопросы? Свяжитесь с нами! Заполняйте форму обратной связи или напишите нам по почте, а также в соцсетях.</span>
+                </p>
+                <form class="contact-us__form">
+                    <input type="text" name="your-name" id="your-name" placeholder="ваше имя" class="contact-us__input"/>
+                    <input type="text" name="your-phone" id="your-phone" placeholder="номер телефона" class="contact-us__input"/>
+                    <input type="text" name="your-email" id="your-email" placeholder="email*" class="contact-us__input"/>
+                    <input type="submit" value="Записаться" class="contact-us__submit"/>
+                </form>
+            </section>
+        </main>
+        <footer class="footer"></footer>
+        <script src="js/add-header.js"></script>
+        <script src="js/add-footer.js"></script>
+        <script src="js/header.js"></script>
+        <script src="js/run-questions.js"></script>
+        <script src="js/course.js"></script>
+    </body>
+</html>
