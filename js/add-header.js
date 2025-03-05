@@ -25,8 +25,8 @@
         <p class="header__lets-call">Созвонимся?</p>
         <p class="header__leave-number">Оставьте свой номер телефона, чтобы мы связались с вами и ответили на все вопросы</p>
         <form class="header__form">
-            <input type="text" name="name" id="name" placeholder="ваше имя" class="header__input"/>
-            <input type="text" name="phone" id="phone" placeholder="номер телефона" class="header__input"/>
+            <input type="text" name="name" id="name" placeholder="ваше имя" class="header__input" maxlength="256" required/>
+            <input type="tel" name="phone" id="phone" placeholder="номер телефона" class="header__input" required/>
             <input type="submit" value="Позвонить мне" class="header__submit"/>
         </form>
     </dialog>

@@ -16,4 +16,6 @@
     //Running sliders
     const grades = document.querySelectorAll('.catalogue__grade');
     grades.forEach(grade => window.runElements(grade, 'catalogue', 1000));
+    //Validating the tel input
+    window.handlePhoneInput(document.getElementById('your-phone'));
 })();

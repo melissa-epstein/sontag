@@ -128,4 +128,6 @@
         addClickListener(modules[i], modules[i + 1]);
     }
     addClickListener(modules[modules.length - 1], modules[0]);
+    //Validating the tel input
+    window.handlePhoneInput(document.getElementById('your-phone'));
 })();

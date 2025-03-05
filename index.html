@@ -147,9 +147,9 @@
                     <span class="contact-us__title-laptop">Остались вопросы? Свяжитесь с нами! Заполняйте форму обратной связи или напишите нам по почте, а также в соцсетях.</span>
                 </p>
                 <form class="contact-us__form">
-                    <input type="text" name="your-name" id="your-name" placeholder="ваше имя" class="contact-us__input"/>
-                    <input type="text" name="your-phone" id="your-phone" placeholder="номер телефона" class="contact-us__input"/>
-                    <input type="text" name="your-email" id="your-email" placeholder="email*" class="contact-us__input"/>
+                    <input type="text" name="your-name" id="your-name" placeholder="ваше имя" class="contact-us__input" required/>
+                    <input type="tel" name="your-phone" id="your-phone" placeholder="номер телефона" class="contact-us__input"/>
+                    <input type="email" name="your-email" id="your-email" placeholder="email*" class="contact-us__input"/>
                     <input type="submit" value="Записаться" class="contact-us__submit"/>
                 </form>
             </section>
@@ -159,13 +159,14 @@
                     <p class="mailing-list__learn">Первыми узнавайте новости нашей школы и информацию о новых курсах.</p>
                 </hgroup>
                 <form class="mailing-list__form">
-                    <input type="text" name="email" id="email" placeholder="email" class="mailing-list__input"/>
+                    <input type="email" name="email" id="email" placeholder="email" class="mailing-list__input" required/>
                     <input type="submit" value="Подписаться" class="mailing-list__submit"/>
                 </form>
             </section>
         <footer class="footer"></footer>
         <script src="js/add-header.js"></script>
         <script src="js/add-footer.js"></script>
+        <script src="js/handle-phone-input.js"></script>
         <script src="js/header.js"></script>
         <script src="js/run-slider.js"></script>
         <script src="js/index.js"></script>

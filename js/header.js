@@ -48,4 +48,6 @@
     const footer = document.querySelector('.footer');
     const mailButton = header.querySelector('.header__mail');
     mailButton.addEventListener('click', () => footer.scrollIntoView({behavior: 'smooth'}));
+    //Validating the tel input
+    window.handlePhoneInput(document.getElementById('phone'));
 })();
