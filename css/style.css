@@ -10,7 +10,7 @@
     to {transform: translateX(0)};
 }
 @keyframes leaves-right {
-    from {transform: translateX(0)};
+    from {transform: translateX(0vw)};
     to {transform: translateX(100vw)};
 }
 @keyframes enters-left {
@@ -2817,6 +2817,8 @@ address {
     position: relative;
 }
 .catalogue__item {
+    animation-name: enters-left;
+    animation-duration: 0.5s;
     width: 100%;
     height: 227px;
     padding: 16px;
@@ -2826,10 +2828,10 @@ address {
     background-color: #304c94;
     margin-bottom: 8px;
 }
-.catalogue__item--gotta-leave {
-    animation-name: element-leaves;
-    animation-duration: 1s;
-    z-index: 2;
+.catalogue__item--must-leave {
+    animation-name: leaves-right;
+    animation-duration: 0.5s;
+    transform: translate(100vw);
 }
 .catalogue__item-container {
     position: relative;
@@ -2856,12 +2858,6 @@ address {
     font-weight: 600;
     color: #fbf3e9;
     width: 245px;
-}
-.catalogue__name:hover {
-    filter: brightness(0.8);
-}
-.catalogue__name:active {
-    filter: brightness(0.6);
 }
 .catalogue__course-footer {
     width: 100%;
@@ -3211,6 +3207,10 @@ address {
         height: 333px;
     }
     .not-found__item {
+        animation-name: enters-left;
+        animation-duration: 0.5s;
+        display: flex;
+        flex-direction: column;
         background-color: #304c94;
         border-radius: 20px;
         width: 707px;
@@ -3219,10 +3219,10 @@ address {
         position: absolute;
         padding: 32px;
     }
-    .not-found__item--gotta-leave {
-        animation-name: element-leaves;
-        animation-duration: 1s;
-        z-index: 2;
+    .not-found__item--must-leave {
+        animation-name: leaves-right;
+        animation-duration: 0.5s;
+        transform: translate(100vw);
     }
     .not-found__picture {
         position: absolute;
@@ -3244,12 +3244,6 @@ address {
         color: white;
         margin-bottom: 35px;
     }
-    .not-found__title:hover {
-        filter: brightness(0.8);
-    }
-    .not-found__title:active {
-        filter: brightness(0.6);
-    }
     .not-found__footer {
         display: flex;
         justify-content: space-between;
@@ -3266,6 +3260,7 @@ address {
         width: 192px;
     }
     .not-found__next {
+        display: block;
         width: 92px;
         height: 57px;
         border: 1px solid white;

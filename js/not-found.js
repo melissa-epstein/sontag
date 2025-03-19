@@ -1,3 +1,3 @@
 (() => {
-    window.runElements(document.querySelector('.not-found'), 'not-found', 1000);
+    window.runSlider(document, 'not-found', 5000, 500);
 })();

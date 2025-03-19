@@ -1,7 +1,7 @@
 (() => {
-    window.runSlider = (section, interval, switchTIme, slidingEase = 3) => {
-        const reviews = document.querySelectorAll(`.${section}__item`);
-        const dotContainer = document.querySelector(`.${section}__dots`);
+    window.runSlider = (container, section, interval, switchTIme, slidingEase = 2) => {
+        const reviews = container.querySelectorAll(`.${section}__item`);
+        const dotContainer = container.querySelector(`.${section}__dots`);
         const dots = [];
         let current = 0;
         let switchingTimeOut;
@@ -30,7 +30,6 @@
             });
             let initialX;
             review.addEventListener('touchstart', evt => {
-                evt.preventDefault();
                 clearTimeout(switchingTimeOut);
                 const touch = evt.changedTouches[0];
                 initialX = touch.pageX;
@@ -41,7 +40,6 @@
                 review.style.transform = `translateX(${touch.pageX - initialX}px)`;
             });
             review.addEventListener('touchend', evt => {
-                evt.preventDefault();
                 review.style.transform = 'none';
                 const touch = evt.changedTouches[0];
                 if (touch.pageX - initialX > review.offsetWidth / slidingEase) {
