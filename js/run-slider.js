@@ -1,5 +1,5 @@
 (() => {
-    window.runSlider = (container, section, interval, switchTIme, slidingEase = 2) => {
+    window.runSlider = (container, section, interval, switchTime, slidingEase = 3) => {
         const reviews = container.querySelectorAll(`.${section}__item`);
         const dotContainer = container.querySelector(`.${section}__dots`);
         const dots = [];
@@ -10,13 +10,18 @@
             newReview.style.display = 'flex';
             oldDot.classList.remove(`${section}__dot--active`);
             newDot.classList.add(`${section}__dot--active`);
+            setTimeout(() => {
+                newReview.classList.remove('slider-element--must-enter-left');
+                newReview.classList.remove('slider-element--must-enter-right');
+            }, switchTime);
         };
         const makeReviewLeave = (oldReview, newReview, oldDot, newDot) => {
-            oldReview.classList.add(`${section}__item--must-leave`);
+            oldReview.classList.add(`slider-element--must-leave`);
             setTimeout(() => {
+                newReview.classList.add(`slider-element--must-enter-left`);
                 switchReview(oldReview, newReview, oldDot, newDot);
-                oldReview.classList.remove(`${section}__item--must-leave`);
-            }, switchTIme);
+                oldReview.classList.remove(`slider-element--must-leave`);
+            }, switchTime);
         };
         reviews.forEach((review, i) => {
             review.style.display = 'none';
@@ -40,7 +45,7 @@
                 review.style.transform = `translateX(${touch.pageX - initialX}px)`;
             });
             review.addEventListener('touchend', evt => {
-                review.style.transform = 'none';
+                review.style.transform = '';
                 const touch = evt.changedTouches[0];
                 if (touch.pageX - initialX > review.offsetWidth / slidingEase) {
                     const previous = current;
@@ -48,6 +53,7 @@
                     if (current == reviews.length) {
                         current = 0;
                     }
+                    reviews[current].classList.add(`slider-element--must-enter-left`);
                     switchReview(reviews[previous], reviews[current], dots[previous], dots[current]);
                 }
                 if (initialX - touch.pageX > review.offsetWidth / slidingEase) {
@@ -56,6 +62,7 @@
                     if (current == -1) {
                         current = reviews.length - 1;
                     }
+                    reviews[current].classList.add(`slider-element--must-enter-right`);
                     switchReview(reviews[previous], reviews[current], dots[previous], dots[current]);
                 }
                 switchingTimeOut = setTimeout(showNextReview, interval);
