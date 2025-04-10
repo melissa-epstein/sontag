@@ -1,4 +1,4 @@
-This repository contains front-end of Sontag website.
+This repository contains front-end of the Sontag website.
 
 Each file *.html here is a page on the website.
 course.html is universal for pages of all courses.
